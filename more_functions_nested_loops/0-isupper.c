@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 /**
  * main - check the code.
  *
@@ -7,24 +7,13 @@
  */
 int main(void)
 {
-	int c;
-	int x;
-	int d;
-
-	x = '1';
-	c = 'A';
-	d = '0';
-	(isupper(c));
-	putchar (c);
-	putchar (58);
-	putchar (x);
-	putchar('\n');
-	c = 'a';
-	(isupper(c));
-	putchar (c);
-	putchar (58);
-	putchar (d);
-	putchar('\n');
-
+char c = 'A';
+	if
+	(isupper(c))
+	printf
+	("A: 1\n");
+	else
+	printf
+	("a: 0");
 	return (0);
 }
