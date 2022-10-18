@@ -7,7 +7,10 @@
 int main(void)
 {
 char c;
-	for (c = 'A'; c <= 'Z'; ++c)
-	printf("%c: %d\n", c, _isupper(c));
-	return (0);
+	for (c = 'A';
+	c <= 'Z'; c++)
+	if (isupper(c))
+	printf("%c: 1\n", c);
+	else
+        return (0);
 }
