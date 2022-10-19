@@ -1,19 +1,22 @@
-#include <ctype.h>
 #include <stdio.h>
+#include <ctype.h>
+#include "main.h"
 /**
- * main - check the code.
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
+int _isupper(int c);
 int main(void)
 {
-char c = 'A';
-	if
-	(isupper(c))
-	printf
-	("A: 1\n");
-	else
-	printf
-	("a: 0");
+char c;
+	for (c = 'A'; c <= 'Z'; c++)
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
+}
+int _isupper(int c)
+{
+	if (c <= 'Z')
+	return (1);
 	return (0);
 }

@@ -1,20 +1,5 @@
-#include <stdio.h>
-#include <ctype.h>
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-char c;
-	for
-	(c = 'A';
-	c <= 'Z'; c++)
-	if
-	(isupper(c))
-	printf
-	("%c: 1\n", c);
-	return (0);
-}
+#ifndef _MAIN_H_
+#define _MAIN_H_
+int _isupper(int c);
+int putchar(int c);
+#endif
