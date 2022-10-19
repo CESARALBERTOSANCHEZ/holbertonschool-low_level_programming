@@ -9,7 +9,7 @@ int _isupper(int c);
 int main(void)
 {
 char c;
-        for (c = 'A'; c <= 'Z'; c++)
+        for (c = 'A'; c <= 'Z'; ++c)
         printf("%c: %d\n", c, _isupper(c));
         return (0);
 }
