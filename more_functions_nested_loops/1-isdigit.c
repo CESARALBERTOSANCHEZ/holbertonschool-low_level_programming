@@ -6,8 +6,8 @@
  */
 int _isdigit(int c)
 {
-	if (c <= '9')
-	return (1);
+	if (c <= 57 && c >= 48)
+		return (1);
 	return (0);
 }
 /**
@@ -17,10 +17,13 @@ int _isdigit(int c)
  */
 int main(void)
 {
-char c;
-	for (c = '0'; c <= '9'; c++)
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
-	return (0);
+	char c;
+
+	for (c = '0'; c <= '9'; c++) {
+		printf("%c: %d\n", c, _isdigit(c));
+	}
+        	c = 'a';
+        	printf("%c: %d\n", c, _isdigit(c));
+	
+		return (0);
 }
