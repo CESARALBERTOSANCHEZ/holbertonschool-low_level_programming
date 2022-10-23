@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
+ ** _isupper - check the caracter c
+ ** @c: value
+ ** Return: in 1 or 0
+ **/
 int _isupper(int c)
 {
 	if (c <= 90 && c >= 65)
