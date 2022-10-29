@@ -9,7 +9,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) -f $(NAME)
+	$(RM) -f $(NAME) $(SRC)
 
 oclean:
 	$(RM) -f $(OBJ)
@@ -19,5 +19,3 @@ fclean:
 
 re: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-hola:
