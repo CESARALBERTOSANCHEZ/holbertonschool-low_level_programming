@@ -9,7 +9,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) -f main.c~ $(NAME)
+	$(RM) -rf $(NAME)
 
 oclean:
 	$(RM) -f $(OBJ)
