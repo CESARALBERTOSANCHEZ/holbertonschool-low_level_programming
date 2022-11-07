@@ -11,7 +11,7 @@ int i;
 	{
 	if (i != 50 && i != 52)
 	{
-		prinf("%c", i);
+		printf("%c", i);
 	}
 	}
 		putchar('\n');
