@@ -7,28 +7,17 @@
  */
 void print_line(int n)
 {
-	if (n == 2)
+int i;
+	if (n <= 0)
 	{
-		putchar(95);
-		putchar(95);
-		putchar('\n');
-	}
-	else if (n == 10)
-	{
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
-		putchar(95);
 		putchar('\n');
 	}
 	else
 	{
-	putchar('\n');
+		for (i = 1; i <= n; i++)
+		{
+			putchar(95);
+		}
+		putchar('\n');
 	}
 }
