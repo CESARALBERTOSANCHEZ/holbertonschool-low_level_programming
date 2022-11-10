@@ -1,25 +1,23 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * more_numbers - printf numbers 0 the 9
+ * print_diagonal - printf diagonales
  *
  * Return: in 0
- *
+ *@n: variable
  */
 void print_diagonal(int n)
 {
 int espacio, diagonal;
-	diagonal = 0;
-	while (diagonal < n)
+	if (n <= 0)
+		putchar(10);
+	for (diagonal = 0; diagonal < n; diagonal++)
 	{
-		espacio = 0;
-		while (espacio < diagonal)
+		for (espacio = 0; espacio < diagonal; espacio++)
 		{
-		putchar(32);
-		espacio++;
+			putchar(32);
 		}
 		putchar(92);
 		putchar(10);
-		diagonal++;
 	}
 }
